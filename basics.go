@@ -2,6 +2,7 @@ package main
 
 import(
 	"fmt"
+	"math/rand"
 )
 
 func main(){
@@ -29,7 +30,26 @@ func main(){
 		fmt.Println(i);
 	}
 
-	
+	//If/else
+
+	var x = rand.Int31n(10)
+	if x > 5{
+		fmt.Println("x is greater than 5")
+	} else{
+		fmt.Println("x is less than 5")
+		fmt.Println("This is the actual Number = ",x)
+	}
+
+	//Switch Case
+
+	Gender := "Men"
+
+	switch Gender{
+	case "Men":
+		fmt.Println("You are a Men")
+	case "Women":
+		fmt.Println("You are a `Women")
+	}
 
 
 
